@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "HudAsp": {
+    "Datathon": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7252;http://localhost:5040",
