@@ -1,20 +1,20 @@
 ﻿{
   "sidebarMenu": [
     {
-      "text": "Navigation",
+      "text": "Navegación",
       "is_header": true
     },
     {
       "controller": "Home",
       "action": "Index",
       "icon": "bi bi-cpu",
-      "text": "Dashboard"
+      "text": "Página de inicio"
     },
     {
       "controller": "Analytics",
       "action": "Index",
       "icon": "bi bi-bar-chart",
-      "text": "Analytics"
+      "text": "Analítica de datos"
     },
     {
       "controller": "Email",
@@ -151,12 +151,12 @@
     {
       "controller": "Tables",
       "icon": "bi bi-grid-3x3",
-      "text": "Tables",
+      "text": "Tablas",
       "children": [
         {
           "controller": "Tables",
           "action": "TableElements",
-          "text": "Table Elements"
+          "text": "Distribución salarial - Detalle nacional"
         },
         {
           "controller": "Tables",

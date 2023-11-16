@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Innovation", "HudAsp\Innovation.csproj", "{05EA29EA-F3BF-4631-8EA5-0405146AB401}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Datathon", "HudAsp\Datathon.csproj", "{05EA29EA-F3BF-4631-8EA5-0405146AB401}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
