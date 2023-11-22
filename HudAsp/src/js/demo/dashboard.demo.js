@@ -223,13 +223,13 @@ var handleRenderChart = function() {
     },
     colors: ['rgba('+ app.color.whiteRgb + ', .25)', app.color.theme],
     series: [{
-    	name: 'MEMORY USAGE',
+    	name: 'USO MEMORIA',
       data: [
       	randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(),
       	randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo()
       ]
     },{
-    	name: 'CPU USAGE',
+    	name: 'USO CPU',
       data: [
       	randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(),
       	randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo(), randomNo()

@@ -46,48 +46,43 @@
       "is_header": true
     },
     {
-      "controller": "Widgets",
-      "action": "Index",
-      "icon": "bi bi-columns-gap",
-      "text": "Widgets"
-    },
-    {
-      "controller": "Pos",
-      "icon": "bi bi-bag-check",
-      "text": "POS System",
-      "highlight": true,
+      "controller": "Tables",
+      "icon": "bi bi-grid-3x3",
+      "text": "Tablas",
       "children": [
         {
-          "controller": "Pos",
-          "action": "CustomerOrder",
-          "text": "Customer Order"
+          "controller": "Tables",
+          "action": "TableElements",
+          "text": "Distribución salarial - Detalle nacional"
         },
         {
-          "controller": "Pos",
-          "action": "KitchenOrder",
-          "text": "Kitchen Order"
+          "controller": "Tables",
+          "action": "TablePlugins",
+          "text": "Table Plugins"
         },
         {
-          "controller": "Pos",
-          "action": "CounterCheckout",
-          "text": "Counter Checkout"
-        },
-        {
-          "controller": "Pos",
-          "action": "TableBooking",
-          "text": "Table Booking"
-        },
-        {
-          "controller": "Pos",
-          "action": "Menu Stock",
-          "text": "MenuStock"
+          "controller": "Tables",
+          "action": "Demo",
+          "text": "Demo"
         }
       ]
     },
     {
+      "controller": "Widgets",
+      "action": "Index",
+      "icon": "bi bi-columns-gap",
+      "text": "Funcionalidad 1"
+    },
+    {
+      "controller": "Pos",
+      "icon": "bi bi-bag-check",
+      "text": "Funcionalidad 2",
+      "highlight": true
+    },
+    {
       "controller": "UIKits",
       "icon": "bi bi-controller",
-      "text": "UI Kits",
+      "text": "Funcionalidad 3",
       "children": [
         {
           "controller": "UIKits",
@@ -129,7 +124,7 @@
     {
       "controller": "Forms",
       "icon": "bi bi-pen",
-      "text": "Forms",
+      "text": "Funcionalidad 4",
       "children": [
         {
           "controller": "Forms",
@@ -149,31 +144,9 @@
       ]
     },
     {
-      "controller": "Tables",
-      "icon": "bi bi-grid-3x3",
-      "text": "Tablas",
-      "children": [
-        {
-          "controller": "Tables",
-          "action": "TableElements",
-          "text": "Distribución salarial - Detalle nacional"
-        },
-        {
-          "controller": "Tables",
-          "action": "TablePlugins",
-          "text": "Table Plugins"
-        },
-        {
-          "controller": "Tables",
-          "action": "Demo",
-          "text": "Demo"
-        }
-      ]
-    },
-    {
       "controller": "Charts",
       "icon": "bi bi-pie-chart",
-      "text": "Charts",
+      "text": "Funcionalidad 5",
       "children": [
         {
           "controller": "Charts",
@@ -191,12 +164,12 @@
       "controller": "Map",
       "action": "Index",
       "icon": "bi bi-compass",
-      "text": "Map"
+      "text": "Funcionalidad 6"
     },
     {
       "controller": "Layout",
       "icon": "bi bi-layout-sidebar",
-      "text": "Layout",
+      "text": "Funcionalidad 7",
       "children": [
         {
           "controller": "Layout",
@@ -233,7 +206,7 @@
     {
       "controller": "Pages",
       "icon": "bi bi-collection",
-      "text": "Pages",
+      "text": "Funcionalidad 8",
       "children": [
         {
           "controller": "Pages",
@@ -303,25 +276,25 @@
       "controller": "Profile",
       "action": "Index",
       "icon": "bi bi-people",
-      "text": "Profile"
+      "text": "Perfil del usuario"
     },
     {
       "controller": "Calendar",
       "action": "Index",
       "icon": "bi bi-calendar4",
-      "text": "Calendar"
+      "text": "Calendario"
     },
     {
       "controller": "Settings",
       "action": "Index",
       "icon": "bi bi-gear",
-      "text": "Settings"
+      "text": "Configuración"
     },
     {
       "controller": "Helper",
       "action": "Index",
       "icon": "bi bi-gem",
-      "text": "Helper"
+      "text": "Ayuda"
     }
   ]
 }
