@@ -1,0 +1,221 @@
+﻿@{
+    ViewData["Title"] = "Table Elements";
+}
+
+@section Styles {
+    <link href="~/lib/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/@@highlightjs/cdn-assets/highlight.min.js"></script>
+    <script src="~/js/demo/highlightjs.demo.js"></script>
+    <script src="~/js/demo/sidebar-scrollspy.demo.js"></script>
+    <script src="~/lib/jvectormap-next/jquery-jvectormap.min.js"></script>
+    <script src="~/lib/jvectormap-content/world-mill.js"></script>
+    <script src="~/lib/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="~/js/demo/dashboard.demo.js"></script>
+}
+
+
+
+
+
+
+<!-- BEGIN container -->
+<div class="container">
+    <!-- BEGIN row -->
+    <div class="row justify-content-center">
+        <!-- BEGIN col-10 -->
+        <div class="col-xl-10">
+            <!-- BEGIN row -->
+            <div class="row">
+                <!-- BEGIN col-9 -->
+                <div class="col-xl-9">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Tablas</a></li>
+                        <li class="breadcrumb-item active">Distribución salarial</li>
+                    </ul>
+
+                    <h1 class="page-header">
+                        Ejemplo de representación de datos
+                    </h1>
+
+                    <hr class="mb-4" />
+
+                    <!-- BEGIN #basicTable -->
+                    <div id="basicTable" class="mb-5">
+                        <h4>Distribución Salarial - Detalle nacional</h4>
+                        <p>Datos obtenidos del Instituto Nacional de Estadísta a fecha de 24 de Noviembre de 2023.</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-n3">
+                                    <div>
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Año</th>
+                                                    <th scope="col">Media</th>
+                                                    <th scope="col">Mediana</th>
+                                                    <th scope="col">Cuartil superior</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2008</th>
+                                                    <td>21.883,42</td>
+                                                    <td>18.244,40</td>
+                                                    <td>26.874,02</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2009</th>
+                                                    <td>22.511,47</td>
+                                                    <td>18.803,28</td>
+                                                    <td>28.024,86</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2010</th>
+                                                    <td>22.899,35</td>
+                                                    <td>19.017,09</td>
+                                                    <td>28.255,45</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2011</th>
+                                                    <td>22.726,44</td>
+                                                    <td>19.303,51</td>
+                                                    <td>28.658,66</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2012</th>
+                                                    <td>22.726,44</td>
+                                                    <td>19.040,98</td>
+                                                    <td>28.395,50</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2013</th>
+                                                    <td>22.697,86</td>
+                                                    <td>19.029,66</td>
+                                                    <td>28.563,69</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2014</th>
+                                                    <td>22.858,17</td>
+                                                    <td>19.263,78</td>
+                                                    <td>28.782,70</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2015</th>
+                                                    <td>23.106,30</td>
+                                                    <td>19.466,49</td>
+                                                    <td>29.163,66</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2016</th>
+                                                    <td>23.156,34</td>
+                                                    <td>19.432,62</td>
+                                                    <td>29.191,56</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2017</th>
+                                                    <td>23.646,5</td>
+                                                    <td>19.830,12</td>
+                                                    <td>29.628,64</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2018</th>
+                                                    <td>24.009,12</td>
+                                                    <td>20.078,44</td>
+                                                    <td>30.057,33</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2019</th>
+                                                    <td>24.395,98</td>
+                                                    <td>20.351,02</td>
+                                                    <td>30.558,45</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2020</th>
+                                                    <td>25.165,51</td>
+                                                    <td>20.920,12</td>
+                                                    <td>31.550,01</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2021</th>
+                                                    <td>25.896,82</td>
+                                                    <td>21.638,45</td>
+                                                    <td>32.385,45</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="card-arrow">
+                                    <div class="card-arrow-top-left"></div>
+                                    <div class="card-arrow-top-right"></div>
+                                    <div class="card-arrow-bottom-left"></div>
+                                    <div class="card-arrow-bottom-right"></div>
+                                </div>
+                                <div class="hljs-container">
+
+
+                                    <div class="card mb-3">
+                                        <!-- BEGIN card-body -->
+                                        <div class="card-body">
+                                            <!-- BEGIN title -->
+                                            <div class="d-flex fw-bold small mb-3">
+                                                <span class="flex-grow-1">Representación de la evolución Anual del Salario</span>
+                                                <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
+                                            </div>
+                                            <!-- END title -->
+                                            <!-- BEGIN chart -->
+                                            <div class="ratio ratio-21x9 mb-3">
+                                                <div id="chart-salario"></div>
+                                            </div>
+
+                                        </div>
+                                        <!-- END card-body -->
+                                        <!-- BEGIN card-arrow -->
+                                        <div class="card-arrow">
+                                            <div class="card-arrow-top-left"></div>
+                                            <div class="card-arrow-top-right"></div>
+                                            <div class="card-arrow-bottom-left"></div>
+                                            <div class="card-arrow-bottom-right"></div>
+                                        </div>
+                                        <!-- END card-arrow -->
+                                    </div>
+                                    <!-- END card -->
+
+                                    <center>
+
+                                        
+                                            <a href="/Tables/TableSalaryPlus">
+                                            <div class="d-grid gap-2">
+                                                <button type="button" class="btn btn-theme">Regresión de los datos</button>
+                                            </div>
+                                            </a>
+                                            
+                                       
+
+
+                                    </center>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- END col-3 -->
+                    </div>
+                    <!-- END row -->
+                </div>
+                <!-- END col-10 -->
+            </div>
+            <!-- END row -->
+        </div>
+        <!-- END container -->

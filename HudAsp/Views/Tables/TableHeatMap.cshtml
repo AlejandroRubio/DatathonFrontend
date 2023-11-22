@@ -1,0 +1,479 @@
+﻿@{
+    ViewData["Title"] = "Tabla con datos HeatMap";
+}
+
+
+@section Styles {
+    <link href="~/lib/jvectormap-next/jquery-jvectormap.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/lib/@@highlightjs/cdn-assets/highlight.min.js"></script>
+    <script src="~/js/demo/highlightjs.demo.js"></script>
+    <script src="~/js/demo/sidebar-scrollspy.demo.js"></script>
+    <script src="~/lib/jvectormap-next/jquery-jvectormap.min.js"></script>
+    <script src="~/lib/jvectormap-content/world-mill.js"></script>
+    <script src="~/lib/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="~/js/demo/dashboard.demo.js"></script>
+}
+
+
+
+
+
+
+<!-- BEGIN container -->
+<div class="container">
+    <!-- BEGIN row -->
+    <div class="row justify-content-center">
+        <!-- BEGIN col-10 -->
+        <div class="col-xl-10">
+            <!-- BEGIN row -->
+            <div class="row">
+                <!-- BEGIN col-9 -->
+                <div class="col-xl-9">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Tablas</a></li>
+                        <li class="breadcrumb-item active">Ánalisis correlaciones con HeatMap</li>
+                    </ul>
+
+                    <h1 class="page-header">
+                        Ánalisis correlaciones con HeatMap
+                    </h1>
+
+                    <hr class="mb-4" />
+
+                    <!-- BEGIN #basicTable -->
+                    <div id="basicTable" class="mb-5">
+                        <h4>Datos anualizados de media salarial, índice de producción + Número de des/empleados por rango de edad</h4>
+                        <p>Datos obtenidos del Instituto Nacional de Estadísta a fecha de 24 de Noviembre de 2023.</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-n3">
+                                    <div>
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Año</th>
+                                                    <th scope="col">Media salaraial</th>
+                                                    <th scope="col">Media Índice producción</th>
+                                                    <th scope="col">Trabajadores 20-24</th>
+                                                    <th scope="col">Trabajadores 25-29</th>
+                                                    <th scope="col">Trabajadores 30-34</th>
+                                                    <th scope="col">Parados 20-24</th>
+                                                    <th scope="col">Parados 25-29</th>
+                                                    <th scope="col">Parados 30-34</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2008</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2009</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2010</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2011</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2012</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2013</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2014</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2015</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2016</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2017</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2018</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2019</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2020</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2021</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="card-arrow">
+                                    <div class="card-arrow-top-left"></div>
+                                    <div class="card-arrow-top-right"></div>
+                                    <div class="card-arrow-bottom-left"></div>
+                                    <div class="card-arrow-bottom-right"></div>
+                                </div>
+                                <div class="hljs-container">
+
+
+                                 
+                          
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- END col-3 -->
+                    </div>
+
+
+                    <div id="basicTable" class="mb-5">
+                        <h4>Datos anualizados de media salarial, índice de producción + Número de des/empleados por rango de edad</h4>
+                        <p>Datos obtenidos del Instituto Nacional de Estadísta a fecha de 24 de Noviembre de 2023.</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row mb-n3">
+                                    <div>
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Año</th>
+                                                    <th scope="col">Media salaraial</th>
+                                                    <th scope="col">Media Índice producción</th>
+                                                    <th scope="col">Trabajadores 20-24</th>
+                                                    <th scope="col">Trabajadores 25-29</th>
+                                                    <th scope="col">Trabajadores 30-34</th>
+                                                    <th scope="col">Parados 20-24</th>
+                                                    <th scope="col">Parados 25-29</th>
+                                                    <th scope="col">Parados 30-34</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">2008</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2009</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2010</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2011</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2012</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">2013</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2014</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2015</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2016</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2017</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2018</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2019</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2020</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2021</th>
+                                                    <td>21883.42</td>
+                                                    <td>96.401</td>
+                                                    <td>2771600.00</td>
+                                                    <td>3609000.00</td>
+                                                    <td>4105000.00</td>
+                                                    <td>349600</td>
+                                                    <td>349800</td>
+                                                    <td>300800.00</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="card-arrow">
+                                    <div class="card-arrow-top-left"></div>
+                                    <div class="card-arrow-top-right"></div>
+                                    <div class="card-arrow-bottom-left"></div>
+                                    <div class="card-arrow-bottom-right"></div>
+                                </div>
+                                <div class="hljs-container">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- END col-3 -->
+                    </div>
+
+                    <center>
+
+
+                        <a href="/Tables/TableHeatMapPlus">
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-theme">Analizar correlación entre los datos</button>
+                            </div>
+                        </a>
+
+
+
+
+                    </center>
+
+
+                    <!-- END row -->
+                </div>
+                <!-- END col-10 -->
+            </div>
+            <!-- END row -->
+        </div>
+        <!-- END container -->

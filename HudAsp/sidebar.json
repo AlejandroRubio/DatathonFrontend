@@ -52,18 +52,28 @@
       "children": [
         {
           "controller": "Tables",
-          "action": "TableElements",
+          "action": "TableSalary",
           "text": "Distribución salarial - Detalle nacional"
         },
         {
           "controller": "Tables",
+          "action": "TableIndustry",
+          "text": "Índice de precios Industriales"
+        },
+        {
+          "controller": "Tables",
+          "action": "TableHeatMap",
+          "text": "Análisis correlaciones"
+        },
+        {
+          "controller": "Tables",
           "action": "TablePlugins",
-          "text": "Table Plugins"
+          "text": "Tabla 4"
         },
         {
           "controller": "Tables",
           "action": "Demo",
-          "text": "Demo"
+          "text": "Tabla 5"
         }
       ]
     },
